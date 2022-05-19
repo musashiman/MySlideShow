@@ -1,0 +1,68 @@
+main{
+    width: 300px;
+    margin: 0 auto;
+    
+}
+img{
+    vertical-align: bottom;
+    
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin-bottom: 8px;
+
+    & ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    & li{
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 4px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        &:hover{
+            background: #f8f8f8;
+        }
+    }
+}
+ #play{
+    width: 140px;
+}
+ #next,#prev{
+    width: 60px;
+}
+
+#main {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 8px;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(5,56px);
+    gap: 5px;
+    
+    & li{
+        cursor: pointer;
+        opacity: 0.4;
+       
+
+        &:hover, &.current{
+            opacity: 1;
+        }
+    }
+    & img{
+        width: 56px;
+      
+    }
+}
+
+
